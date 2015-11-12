@@ -1,0 +1,35 @@
+//create grids via divs x
+//Sketch! x
+//clears sketchpad
+//Add new grids on user input
+//Reset sketch pad to default
+//Leaves a temporary trail rather than a permanent sketch
+// Sketch in random colors!
+//Find out the 6 digit color code after # from 16 possible characters
+//grids are removed after being sketched
+
+
+
+
+$(document).ready(function(){
+  console.log("Hey team let's do this!");
+  var gridLoop = function(x, y){ //Loop for making 16x16 grid
+    for(var x = 0; x < 16; x++){
+      for(var y = 0; y < 16; y++){
+        $('<div class="unit"></div>').appendTo('#outer')
+        console.log('Made a div!')
+      }
+    }
+  }
+  gridLoop(0, 0); //Create grids
+  $('.unit').mouseenter(function(){
+    $(this).addClass('hover');
+  });
+
+});
+
+var resetSketch = function(){
+  $('#reset').on('click', function{
+    $('.unit').removeClass('hover')
+  })
+}
