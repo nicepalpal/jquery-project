@@ -1,9 +1,13 @@
 
+
+
+
 $(document).ready(function(){
     createGrid(32);
     defaultGrid();
     addNewGrid();
     resetGrid();
+    chooseColor();
   });
 
   var createGrid = function(x){ //Makes grid based on overall size of 960px, depending on the squareSize input
@@ -55,9 +59,11 @@ var resetGrid = function(){ //Removes colors
 
 var chooseColor = function(){ //Make multiple buttons for choosing basic colors
   $('#red').click(function(){
-    $('.hover').css("background-color: red");
-  });
+    $('.hover').css("background-color", "red");
 
+  });
+  $('#yellow').click(function(){
+    $('.hover').css("background-color", "yellow");
+  });
 }
 //The below should be in the extras bar. (random color, trails)
-
