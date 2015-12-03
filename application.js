@@ -53,27 +53,31 @@ var resetGrid = function(){ //Removes colors
   $('#reset').click(function(){
     $('.unit').unbind();
     $('.unit').removeClass('hover');
+    $('.unit').removeClass('red')
+    $('.unit').removeClass('yellow')
     sketch();
   })
 }
 
-//var chooseColor = function(){ //Make multiple buttons for choosing basic colors
-  //$('#red').click(function(){
-  //  $('.unit').mouseenter(function(){
-    //  $(this).unbind();
-    //  $(this).addClass('red');
-//  });
-  //$('#yellow').click(function(){
-  //  $('.unit').mouseenter(function(){
-  //    $(this).unbind();
-  //    $(this).addClass('yellow');
-  //    });
-//  $('#blue').click(function(){
-  //  $('.unit').mouseenter(function(){
-//      $(this).unbind();
-//      $(this).addClass('blue');
-  //      });
-  //    });
-//    });
-// };
+var chooseColor = function(){ //Make multiple buttons for choosing basic colors
+  $('#red').click(function(){
+    $('.unit').mouseenter(function(){
+      $(this).unbind();
+      $(this).addClass('red');
+ });
+  $('#yellow').click(function(){
+    $('.unit').mouseenter(function(){
+      $(this).unbind();
+        $(this).addClass('yellow');
+      });
+  $('#blue').click(function(){
+    $('.unit').mouseenter(function(){
+      $(this).unbind();
+      $(this).addClass('hover');
+        });
+      });
+    });
+  })
+ };
+
 //The below should be in the extras bar. (random color, trails)
