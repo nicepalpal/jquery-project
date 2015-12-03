@@ -1,5 +1,29 @@
 
 
+
+
+
+
+#navBar{
+  width: 100%
+  text-align center;
+  display: inline-block;
+  margin: 20px auto;
+  margin-left: 46.5%;
+
+}
+
+#navBar h2{
+
+}
+
+
+#selectBar{
+    display: block;
+    margin-left: 40%;
+
+}
+
 #outer{
     height: 960px;
     width: 960px;
@@ -16,7 +40,7 @@
 }
 
 
-.blue{
+.hover{
   background-color: blue;
 }
 
